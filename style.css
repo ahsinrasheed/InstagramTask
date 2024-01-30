@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #eee;
+}
+a {
+  color: #3897f0;
+  text-decoration: none;
+}
+p {
+  font-size: 12px;
+}
+
+.main {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem;
+}
+.right {
+  width: 50%;
+}
+.right img {
+  width: 50%;
+  height: 50%;
+}
+.left {
+  width: 50%;
+  /* display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; */
+}
+.login {
+  background-color: #fff;
+  border: 2px solid #eee;
+  padding: 10px;
+  width: 50%;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.form input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+}
+.form button {
+  padding: 10px;
+  background-color: blue;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.signUp {
+  background-color: #fff;
+  border: 2px solid #eee;
+  padding: 10px;
+  width: 50%;
+}
+.option {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.option a {
+  padding: 0.5rem;
+}
+.line {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+.line::before,
+.line::after {
+  content: "";
+  height: 2px;
+  background-color: #eee;
+  display: block;
+}
+.getApp {
+  text-align: center;
+  width: 50%;
+  padding: 1rem;
+}
+.getApp img {
+  width: 40%;
+  height: 40%;
+  padding-top: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    gap: 2px;
+  }
+  .right {
+    width: 100%;
+  }
+  .left {
+    width: 100%;
+  }
+  .login {
+    width: 100%;
+  }
+  .form {
+    flex-direction: column;
+  }
+  .signUp {
+    width: 100%;
+  }
+  .getApp {
+    width: 100%;
+  }
+}
